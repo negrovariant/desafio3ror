@@ -1,0 +1,5 @@
+<%= form <%= form_with url: "movies", method: :get do |movie| %>
+  <%= form.label :query, "Search for:" %>
+  <%= form.text_field :query %>
+  <%= form.submit "Search" %>
+<% end %>
